@@ -1,0 +1,65 @@
+<nav class="navbar-expand-md">
+    <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun" >
+        <mat-toolbar class="example-toolbar">
+          <button mat-icon-button (click)="snav.toggle()"><mat-icon color="danger">notes</mat-icon></button>
+          <a class="navbar-brand" routerLink="/">{{app_name}}</a>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item" *ngIf="isLogged">
+                  <a class="nav-link" routerLink="/offers">Offers
+                  </a>
+                </li>
+                LOGGED: {{isLogged}}
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item" *ngIf="!isLogged">
+                  <a class="nav-link" routerLink="/user/register">Register
+                </a>
+                </li>
+                <li class="nav-item" *ngIf="isLogged">
+                  <a class="nav-link" routerLink="/user/profile">Profile</a>
+                </li>
+                <li class="nav-item" *ngIf="isLogged">
+                  <a class="nav-link" routerLink="/admin/list-books">List Books</a>
+                </li>
+                <li class="nav-item" *ngIf="!isLogged">
+                  <a class="nav-link" routerLink="/user/login">Login
+                  </a>
+                </li>
+                <li class="nav-item" *ngIf="isLogged">
+                  <a href="#" class="nav-link" (click)="onLogout()">Logout
+                  </a>
+                </li>
+              </ul>
+            </div>     
+        </mat-toolbar>
+      
+        <mat-sidenav-container class="example-sidenav-container"
+                              [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+          <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+            <mat-nav-list>
+              <a mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNav">
+                <mat-icon class="icono">{{nav.icon}}</mat-icon>
+                {{nav.name}}</a>
+            </mat-nav-list>
+          </mat-sidenav>
+      
+          <mat-sidenav-content>
+            <router-outlet></router-outlet>
+            <app-home></app-home>
+            <app-about></app-about>
+            <app-service></app-service>
+            <app-project></app-project>
+            <app-client></app-client>
+            
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+      </div>
+      
+      <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+  </nav>
+    
+  
+    
+  

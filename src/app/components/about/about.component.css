@@ -1,0 +1,30 @@
+.weare-section{
+	padding-top: 10rem;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+	
+	/*Flexbox setup*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+ 
+.row{
+	display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;	
+}
+
+
+  .mat-chip{
+	font-size: 30px;
+  }
+

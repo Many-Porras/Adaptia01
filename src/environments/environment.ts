@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDKuIawNhMfseNGNRh7wbfRqAEGCKzHeXA",
+    authDomain: "adaptia-cloud.firebaseapp.com",
+    databaseURL: "https://adaptia-cloud.firebaseio.com",
+    projectId: "adaptia-cloud",
+    storageBucket: "adaptia-cloud.appspot.com",
+    messagingSenderId: "1002397104723",
+    appId: "1:1002397104723:web:2061219490067ea164e4a6",
+    measurementId: "G-QM3LV1VV2J"
+  }
 };
 
 /*

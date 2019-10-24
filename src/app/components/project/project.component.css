@@ -1,0 +1,14 @@
+.ngb-carousel{
+    padding: 8rem 0;
+	/*Flexbox setup*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-flow: row wrap;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}

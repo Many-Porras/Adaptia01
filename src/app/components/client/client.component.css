@@ -1,0 +1,30 @@
+.clients-section{
+    padding: 8rem 0;
+    background-image: url('src/assets/img/Anotacion2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    /*Flexbox setup*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    min-height: 100vh;
+  }
+  .img {
+      width: 100%;
+      margin-bottom: 18%;
+    }
+    .card-picture {
+      width: 23%;
+      margin-bottom: 2%;
+    }
+    .container {
+      min-height: 100%;
+      width: 100%;
+      padding: 30px;
+    }
+    .search-form {
+      width: 90%;
+    }
