@@ -52,3 +52,9 @@ mat-chip-list{
   position: relative;
   float: right;
 }
+
+
+.btn{
+  position: relative;
+  margin-right: 15px;
+}

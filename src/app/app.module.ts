@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ClientComponent } from './components/client/client.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { environment } from '../environments/environment';
 
@@ -26,10 +27,6 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { FooterComponent } from './components/footer/footer.component';
-
-
-
 
 @NgModule({
   declarations: [

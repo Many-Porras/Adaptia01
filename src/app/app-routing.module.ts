@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ClientComponent } from './components/client/client.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { Page404Component } from './components/page404/page404.component';
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'service', component: ServiceComponent},
   { path: 'project', component: ProjectComponent},
   { path: 'client', component: ClientComponent},
+  { path: 'footer', component: FooterComponent},
   { path: '**', component: Page404Component}
 ];
 
