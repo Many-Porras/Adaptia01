@@ -12,7 +12,7 @@
 .card{
 cursor: pointer;
   display: block;
-  background: #134750;
+  background-color: rgb(40, 161, 147);
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   margin: auto;
   display: flex;
@@ -20,7 +20,7 @@ cursor: pointer;
   align-items: center; 
   justify-content: center;
   text-align: center;
-  text-align: center;
+
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -35,5 +35,5 @@ cursor: pointer;
   }
   
   .card:hover  {
-	background-color: rgb(40, 218, 187);
+	background-color: rgba(0, 250, 193);
   }

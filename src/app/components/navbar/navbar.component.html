@@ -1,15 +1,16 @@
 <nav class="navbar-expand-md">
     <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun" >
-        <mat-toolbar class="example-toolbar">
-          <button mat-icon-button (click)="snav.toggle()"><mat-icon color="danger">notes</mat-icon></button>
-          <a class="navbar-brand" routerLink="/">{{app_name}}</a>
+        <mat-toolbar id="toolbar" class="example-toolbar">
+          <button mat-icon-button style="margin: 25px;" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+          <a class="navbar-brand" routerLink="/"><img style="max-width:285px; 
+            height:auto; height:50px" src="assets/img/logoFooter.png"></a>
           <div class="collapse navbar-collapse" id="mainNavbar">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item" *ngIf="isLogged">
                   <a class="nav-link" routerLink="/offers">Offers
                   </a>
                 </li>
-                LOGGED: {{isLogged}}
+                <!--  LOGGED: {{isLogged}} -->
               </ul>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isLogged">

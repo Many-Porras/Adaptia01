@@ -17,6 +17,11 @@ import { Page404Component } from './components/page404/page404.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServiceComponent } from './components/service/service.component';
+import { Service01Component } from './components/service/service01/service01.component';
+import { Service02Component } from './components/service/service02/service02.component';
+import { Service03Component } from './components/service/service03/service03.component';
+import { Service04Component } from './components/service/service04/service04.component';
+import { Service05Component } from './components/service/service05/service05.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ClientComponent } from './components/client/client.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -27,6 +32,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 @NgModule({
   declarations: [
@@ -39,9 +45,15 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     AboutComponent,
     HomeComponent,
     ServiceComponent,
+    Service01Component,
+    Service02Component,
+    Service03Component,
+    Service04Component,
+    Service05Component,
     ProjectComponent,
     ClientComponent,
     FooterComponent
+    
   ],
   imports: [
     BrowserModule,

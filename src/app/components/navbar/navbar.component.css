@@ -42,10 +42,15 @@ mat-sidenav{
 .icono{
   margin-right: 10px;
 }
+#toolbar {
+
+  z-index:1000;
+}
 
 mat-toolbar{
-  background: linear-gradient(90deg, rgb(28, 50, 71), rgb(40, 218, 187));
-  color:white;
+  position: absolute;
+background-color:transparent;
+padding: 3%;
 }
 
 mat-chip-list{
@@ -57,4 +62,10 @@ mat-chip-list{
 .btn{
   position: relative;
   margin-right: 15px;
+}
+
+mat-icon{
+  color: #4edcbe;
+  font-size: 50px;
+  width: 50px;
 }
